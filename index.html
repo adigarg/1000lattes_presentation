@@ -1,67 +1,4 @@
 <!doctype html>
-
-<!--
-
-    Welcome to the light side of the source, young padawan.
-
-    One step closer to learn something interesting you are...
-
-                               ____                  
-                            _.' :  `._               
-                        .-.'`.  ;   .'`.-.           
-               __      / : ___\ ;  /___ ; \      __  
-             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
-             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
-                  `:-.._J '-.-'L__ `-.-' L_..-;'     
-                    "-.__ ;  .-"  "-.  : __.-"       
-                        L ' /.======.\ ' J           
-                         "-.   "__"   .-"            
-                        __.l"-:_JL_;-";.__           
-                     .-j/'.;  ;""""  / .'\"-.        
-                   .' /:`. "-.:     .-" .';  `.      
-                .-"  / ;  "-. "-..-" .-"  :    "-.   
-             .+"-.  : :      "-.__.-"      ;-._   \  
-             ; \  `.; ;                    : : "+. ; 
-             :  ;   ; ;                    : ;  : \: 
-             ;  :   ; :                    ;:   ;  : 
-            : \  ;  :  ;                  : ;  /  :: 
-            ;  ; :   ; :                  ;   :   ;: 
-            :  :  ;  :  ;                : :  ;  : ; 
-            ;\    :   ; :                ; ;     ; ; 
-            : `."-;   :  ;              :  ;    /  ; 
-             ;    -:   ; :              ;  : .-"   : 
-             :\     \  :  ;            : \.-"      : 
-              ;`.    \  ; :            ;.'_..-=  / ; 
-              :  "-.  "-:  ;          :/."      .'  :
-               \         \ :          ;/  __        :
-                \       .-`.\        /t-""  ":-+.   :
-                 `.  .-"    `l    __/ /`. :  ; ; \  ;
-                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
-                    \ / .-"   /.     .'.' ;_:'    ;  
-                     :-""-.`./-.'     /    `.___.'   
-                           \ `t  ._  /               
-                            "-.t-._:'                
-
--->
-
-<!--
-    
-    So you'd like to know how to use impress.js?
-    
-    You've made the first, very important step - you're reading the source code.
-    And that's how impress.js presentations are built - with HTML and CSS code.
-    
-    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
-    More importantly, you need to be a designer. There are no default styles or layouts for impress.js presentations.
-    
-    You need to design and build it by hand.
-    
-    So...
-    
-    Would you still like to know how to use impress.js?
-    
--->
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -69,8 +6,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>1000 Lattes | This is not Trulia. This is a tribute</title>
     
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="description" content="1000 Lattes is the tool to start fostering better relationships within your organisation" />
+    <meta name="author" content="Aditi Garg"/>
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
@@ -163,10 +100,14 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Are you <b>bored</b> of seeing the same people everyday?</q>
+    <div id="bored" class="step slide" data-x="-200" data-y="-1500">
+            <img id="imgok" src="imgs/coffee-addict.png">
     </div>
+    
 
+    <div class="step slide" data-x="1000" data-y="-1500">
+            <img id="imgok" src="imgs/coffee-stock.png">
+    </div>
     <!--
         
         The `id` attribute of the step element is used to identify it in the URL, but it's optional.
@@ -182,14 +123,6 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>Do you think that the <strong>best thing</strong> about waking up is enjoying another cup of <strong>coffee?</strong></q>
-    </div>
-
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>meet new people</strong> while <strong>enjoying your coffee</strong>?</q>
-    </div>
-
     <!--
         
         This is an example of step element being scaled.
@@ -200,10 +133,9 @@
         down (4 times) to make it back to its correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">Team MTGA<sup>*</sup> presents:</span>
-        <h1>Covfefe</h1>
-        <span class="footnote"><sup>*</sup>Make Trulia Great Again</span>
+    <div class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">And thus we present:</span>
+        <h1 id="main-title">1000 Lattes</h1>
     </div>
 
     <!--
@@ -214,14 +146,14 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>Just kidding!<br/>
-        It's actually called <strong>a 1000 Lattes</strong><br/>
-        and yes, you can drink tea, water or beer on these latte dates if you want!</p>
+    <div id="its" class="step" data-x="-3200" data-y="4200" data-rotate="90" data-scale="5">
+        <p>No pressure!<br/>
+        you can drink <strong>tea, water or beer</strong> on these latte dates if you want. It's just a way to 
+        meet new people without it being awkward <strong>(no, this is not tinder for work)</strong>.</p>
     </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>find your <b>latte</b> <span class="thoughts">match</span></p>
+    <div id="big" class="step" data-x="500" data-y="3200" data-rotate="180" data-scale="6">
+        <p>Yes, it's <b>demo</b> <span class="thoughts">time</span></p>
     </div>
 
     <!--
@@ -257,19 +189,24 @@
         Only one current step has the `present` class.
         
     -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>Sign in using <b class="positioning">okta</b> enter your <b class="rotating">interests</b> then hit <b class="scaling">save</b> now refresh.</p>
+    <div id="ing" class="step" data-x="4500" data-y="-3250" data-rotate="270" data-scale="6">
+        <p>Sign in using <b class="positioning">okta</b> enter your <b class="rotating">interests</b> then hit <b class="scaling">save</b> now.</p>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>Did you get a <b class="imagination">coffee match?</b></p>
+    <div id="source" class="step" data-x="6700" data-y="-800" data-rotate="20" data-scale="4">
+        <p>Did you get a <b>coffee match?</b> Hint: Check your Slack/Email.</p>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>Oh and did you check your Slack and email?</p>
+    
+    <div class="step" data-x="11000" data-y="-300" data-scale="2">
+       <img id="imgok" src="imgs/serverless.png"> 
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+    <div class="step" data-x="6900" data-y="2700" data-scale="4">
+       <img id="imgok" src="imgs/architecture.png"> 
+    </div>
+    
+    <div id="one-more-thing" class="step" data-x="6000" data-y="5000" data-scale="2">
         <p>When...?</p>
     </div>
 
@@ -285,8 +222,8 @@
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">Meet</span> <span class="you">up</span> <span class="noticed">on</span> <span class="its">2pm</span> <span class="in">Friday.</span>
+    <div id="its-in-3d" class="step" data-x="6200" data-y="5300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">Meet</span> <span class="you">up</span> <span class="noticed">on</span> <span class="its">whenever.</span>
         <span class="footnote">Peet's, Starbucks, Blue Bottle or the 7th, you decide.</span>
     </div>
 
@@ -305,10 +242,7 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>
-
-</div>
+ 
 
 <!--
     

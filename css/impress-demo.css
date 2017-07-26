@@ -699,3 +699,26 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+#imgok {
+    /* Set rules to fill background */
+min-height: 100%;
+min-width: 1024px;
+/* Set up proportionate scaling */
+width: 100%;
+height: auto;
+/* Set up positioning */
+position: fixed;
+top: 0;
+left: 0;
+bottom:0;
+right:0;
+margin:auto;
+}
+
+#bored {
+  height: 900px;
+}
+
+#main-title {
+    font-size: 150px;
+}
